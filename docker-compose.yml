@@ -18,14 +18,16 @@ services:
       PHP_IDE_CONFIG: "serverName=Backend"
     links:
     - mysql
-    container_name: ${PROJECT_NAME}_web
+    container_name: "multiplica_web"
+
   mysql:
     image: mysql:5.7
     volumes:
     - ./database/data:/var/lib/mysql
     ports:
     - 3306:3306
+
     environment:
-    - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
-    - MYSQL_DATABASE=${DB_NAME}
-    container_name: ${PROJECT_NAME}_db
+    - MYSQL_ROOT_PASSWORD=hola123.
+
+    container_name: "multiplica_db"

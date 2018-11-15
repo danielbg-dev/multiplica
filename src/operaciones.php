@@ -31,7 +31,7 @@ if (isset($_POST['operacion'])){
 
 
 function operacion_division(){
-	$cliente = new nusoap_client("http://132.248.63.140/ms/server.php?wsdl",'wsdl');	
+	$cliente = new nusoap_client("http://172.18.0.1/server.php?wsdl",'wsdl');	
 	$error = $cliente->getError();
 
     if ($error) {
@@ -58,7 +58,7 @@ function operacion_division(){
 
 function operacion_multiplicacion(){
 
-	$cliente = new nusoap_client("http://132.248.63.140/ms/server.php?wsdl",'wsdl');	
+	$cliente = new nusoap_client("http://172.18.0.1/server.php?wsdl",'wsdl');	
 	$error = $cliente->getError();
 
     if ($error) {
