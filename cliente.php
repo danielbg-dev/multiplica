@@ -1,7 +1,7 @@
 <?php
     include("nusoap.php");
 
-    $cliente = new nusoap_client("http://132.248.63.140/ms/server.php?wsdl",'wsdl');
+    $cliente = new nusoap_client("http://172.18.0.1/server.php?wsdl",'wsdl');
       
     $error = $cliente->getError();
 

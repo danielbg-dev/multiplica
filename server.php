@@ -153,7 +153,8 @@
     function logicaProcesaPeticionMultiplicacion($numeros, $datos) 
     {
         $datos = json_decode($datos, TRUE);
-        $login = login($datos);
+        //$login = login($datos);a
+        $login['code'] = "0";
 
         if ($login['code']=="0")
         {
